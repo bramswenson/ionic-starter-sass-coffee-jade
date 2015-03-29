@@ -2,7 +2,8 @@ angular.module('App', ['ionic'])
   .config ($stateProvider, $urlRouterProvider)->
 
     $stateProvider.state 'home',
-      url: '/home'
+      url:         '/home'
+      controller:  'HomeController'
       templateUrl: 'views/home/home.html'
 
     # TODO: create an error page that captures the details
