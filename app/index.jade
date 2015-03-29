@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    // meta
+    meta(charset='utf-8')
+    meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width')
+
+    // title set by ionic
+    title
+
+    // ionic and core app styles
+    link(href='stylesheets/app.css', rel='stylesheet')
+
+    // ionic/angularjs js
+    script(src='lib/ionic/js/ionic.bundle.js')
+
+    // cordova script (this will be a 404 during development)
+    script(src='cordova.js')
+
+    // app js and css
+    script(src='scripts/app.js')
+
+  body(ng-app='App')
+    ion-nav-bar.bar-positive
+      ion-nav-back-button.button-clear
+        i.icon.ion-ios-arrow-back
+    ion-nav-view
